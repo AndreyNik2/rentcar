@@ -32,11 +32,8 @@ type Prop = {
 export const CarModal: FC<Prop> = ({ car, isOpenModal, setIsOpenModal }) => {
   const adress = car.address.split(", ");
   const modalRef = useRef<HTMLDivElement>(null);
-  const modalClose = () => {
-    setIsOpenModal(false);
-  };
 
-  
+
   const mileage = (car: ICar) => {
     if (car.mileage.toString().length <= 3) {
       return car.mileage;

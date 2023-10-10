@@ -11,7 +11,6 @@ import { getRentalCars } from "../services/api/apiRentalCar";
 import { ICar } from "../models/ICar";
 import { errorCatch } from "../services/api/error.api";
 import { CarItem } from "../components/CarItem";
-import { CarModal } from "../components/CarModal";
 import { Dropdown } from "../components/Dropdown";
 
 export const CatalogPage: FC = () => {

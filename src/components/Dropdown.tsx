@@ -1,5 +1,4 @@
 import { FC, useState } from "react";
-import { ICar } from "../models/ICar";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 import {
   DropdownContainer,
