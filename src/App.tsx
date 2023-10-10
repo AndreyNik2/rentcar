@@ -7,7 +7,7 @@ import { SharedLayout } from "./components/SharedLayout";
 
 function App() {
   return (
-    <BrowserRouter basename="/rental-car">
+    <BrowserRouter basename="/rentcar">
       <Routes>
         <Route path='/' element={<SharedLayout/>}>
           <Route index element={<HomePage />} />
