@@ -14,10 +14,12 @@ const favoritesSlice = createSlice({
   reducers: {
     toggleFavorites(state, action: PayloadAction<string>) {
       if (!state.list.includes(action.payload)) {
-        state.list.push(action.payload);
+        state.list = [...state.list, action.payload]
+        console.log(state.list)
       }
-      if (state.list.includes(action.payload)) {
+      else {
         state.list = state.list.filter(item => item !== action.payload)
+        console.log(state.list);
       }
     },
   },
