@@ -9,6 +9,13 @@ export const H1 = styled.h1`
   border-bottom: 1px solid #000000;
 `;
 
+export const DropdownsContainer = styled.div`
+
+display: flex;
+gap: 20px;
+padding-top: 20px ;
+`
+
 export const CarList = styled.ul`
   margin: 20px 0;
   display: flex;

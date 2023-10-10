@@ -22,7 +22,6 @@ import {
   СhContainer,
 } from "./CarModal.styled";
 import { FaXmark } from "react-icons/fa6";
-import { useClickOutside } from "../hooks/useClickOutside";
 
 type Prop = {
   car: ICar;
@@ -36,7 +35,8 @@ export const CarModal: FC<Prop> = ({ car, isOpenModal, setIsOpenModal }) => {
   const modalClose = () => {
     setIsOpenModal(false);
   };
-  useClickOutside(modalRef, modalClose);
+
+  
   const mileage = (car: ICar) => {
     if (car.mileage.toString().length <= 3) {
       return car.mileage;
