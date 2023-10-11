@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Dd = styled.div`
   position: relative;
-  z-index: 3;
+  z-index: 2;
 `;
 
 export const DropdownContainer = styled.div`
