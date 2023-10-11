@@ -47,7 +47,7 @@ export const CarItem: FC<Prop> = ({ car }) => {
   return (
     <Car>
       <ImgContainer>
-        <CarImg src={car.img} alt={car.make} />
+        <CarImg src={car.img} alt={car.make} loading="lazy"/>
         {favorites.includes(car.id) && (
           <LikeBtn onClick={() => toggleFav(car)}>
             <AiFillHeart color="#3470FF" size="20px" />
